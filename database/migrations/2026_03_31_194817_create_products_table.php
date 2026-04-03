@@ -16,7 +16,6 @@ return new class extends Migration {
             $table->string('description')->nullable();
             $table->integer('price');
             $table->decimal('stock_quantity');
-            $table->foreignIdFor(Supplier::class)->constrained()->restrictOnDelete();
             $table->timestamps();
             $table->softDeletes();
         });
